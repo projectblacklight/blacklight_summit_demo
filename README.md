@@ -50,7 +50,7 @@ $ bundle exec solr_wrapper -i tmp/solr
 Indexing fixture data into solr:
 
 ```console
-$ curl 'http://localhost:8983/solr/blacklight-core/update?commit=true' --data-binary @solr/fixtures.json -H 'Content-type:application/json'
+$ MARC_FILE=solr/lc_records.utf8.mrc bundle exec rake solr:marc:index
 ```
 
 ## References
