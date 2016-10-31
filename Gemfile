@@ -58,3 +58,8 @@ gem 'traject'
 group :development, :test do
   gem 'solr_wrapper', '>= 0.3'
 end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+end
